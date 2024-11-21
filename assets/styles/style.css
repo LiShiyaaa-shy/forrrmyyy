@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('assets/font/Cormorant/Cormorant-Italic-VariableFont_wght.ttf'); /* cormorant */
+    src: url('assets/font/felixtitling.ttf') format('embedded-opentype'), /* felix titling */
+        url('assets/font/Fenix/Fenix-Regular.ttf') format('woff2'), /* fenix */
+        url('assets/font/Inria_Serif/InriaSerif-Regular.ttf') format('woff'), /* inria serif*/
+    }
+
+    body{
+        height: 3000px;
+        width: 100vw;
+    }
+
+    .bg-img {
+        height: 120vh;
+        width: 100vw;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .navbar-brand{
+        font-family: 'felixtitling';
+    }
+
+    .nav-link{
+        font-family: 'fenix';
+        position: relative;
+    }
+
+    .nav-link::after{
+        content:'';
+        opacity: 0;
+        transition: all 0.2s;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+    }
+
+    .nav-link:hover::after {
+        opacity: 1;
+    }
+
+    .navbar{
+        border-bottom: 3px solid white;
+    }
+
+    .navbar-scrolled {
+        opacity: 70%;
+    }
+
+    .Profile{
+        background-image: url("assets/image/background\ about\ me.png");
+    }
+    
+    .box-text{
+        margin-top: 300px;
+    }
+
+    .home{
+        color: white;
+        margin-top: 240px;
+        margin-right: 5vh;
+        margin-left: 5vh;
+    }
+
+    .date-profile{
+        font-family: 'fenix';
+        font-size: 23px;
+    }
+    .welcome-text{
+        font-family: 'cormorant';
+        font-size: 70px;
+    }
+    .readmore{
+        margin-right: 40px;
+    }
+    .preview, .prev{
+        font-family: 'cormorant';
+        margin-right: 55px;
+    }
+    .prev{
+        font-size: small;
+    }
+
+    .Profile{
+        margin-top: 200px;
+        height: 100vh;
+        width: 100vw;
+    }
+    .bg-profil{
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-top: 5px solid black;
+        height: 100vh;
+        width: 100vw;
+    }
+    .face{
+        left: 60px;
+        top: 160px;
+        width: 350px;
+        height: auto;
+    }
+    .aboutme{
+        position: inherit;
+        top: -600px;
+        font-size: 70px;
+        font-family: 'cormorant';
+    }
+
+    .box-text-profil{
+        position: inherit;
+        top: -530px;
+        font-size: 30px;
+        width: 820px;
+        font-family: 'inria_serif';
+        padding: 20px 20px 20px 20px;
+    }
+
+    .bg-course{
+        float: inline-start;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-top: 5px solid black;
+        margin-top: -423px;
+        width: 100vw;
+        height: 190vh;
+    }
+
+    .course,.html,.css,.jsp{
+        font-family: 'cormorant';
+    }
+    .course{
+        top: 230%;
+        left: 250px;
+        font-size: 70px;
+    }
+    .html{
+        top: 238% ;
+        left: 60%;
+    }
+    .css{
+        top:298%;
+        left: 35%;
+    }
+    .jsp{
+        top: 358%;
+        left: 55%;
+    }
+    .img-html{
+        top: 230%;
+        left: 50px;
+    }
+    .img-css{
+        top: 293%;
+        left: 65%;
+    }
+    .gif-java{
+        top: 355%;
+        left: 50px;
+    }
+
+    .box-text-html,.box-text-java,.box-text-css{
+        font-size: 33px;
+        width: 800px;
+        font-family: 'inria_serif';
+        padding: 20px 20px 20px 20px;
+    }
+
+    .box-text-html{
+        top: 250% ;
+        left: 39%;
+    }
+    .box-text-java{
+        top: 370%;
+        left: 39%;
+    }
+    .box-text-css{
+        top:310%;
+        left: 2%;
+    }
+    
+    .klick-me{
+        top: 410%;
+    }
+
+    .bg-card{
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-top: 5px solid black;
+        height: 120vh;
+        width: 100vw;
+    }
+    .bg-contact{
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-top: 5px solid black;
+        width: 100vw;
+        height:70vh ;
+    }
+
+    .card-group{
+        top: 450%;
+        font-family: 'inria_serif';
+    }
+    .card-titttle,.btn{
+        font-family: 'cormorant';
+    }
+
+    .card {
+        transition: all 0.3s;
+    }
+
+    .card:hover{
+        transform: scale(1.15);
+    }
+
+    footer{
+        background-color: #101010;
+    }
+    .footerContainer{
+        width: 100%;
+    }
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+    }
+    .socialIcons a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .ziyy{
+        font-family: 'cormorant';
+    }
+
+    .footerBottom{
+        background-color: rgb(14, 13, 13);
+        padding-bottom: 0.02px;
+        padding-top: 0.02px;
+    }
+
+    .form-comment{
+        top: 555%;
+        left: 100px;
+    }
+
+    .cmt{
+        font-family: 'cormorant';
+        font-size: 60px;
+    }
+
+    .plc{
+        width: 1000px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    .send{
+        width: 70px;
+        height:80px;
+        border-radius: 20px;
+    }
+
+    #list-comment{
+        list-style: none;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .trigle{
+        border-bottom:solid 120px #101010;
+        border-left:solid 650px transparent;
+        border-right:solid 671px transparent;
+        top: 597%;
+    }
